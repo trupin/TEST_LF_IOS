@@ -1,7 +1,7 @@
 
 # TODO
 
-Le test a pour but de constuire une application iOS en **Objective-c** avec une **architecture propre**, compatible  **iOS 7/8** et respectant le standard **autolayout** (pas de .xib).
+Le test a pour but de constuire une application iOS en **Objective-c** avec une **architecture propre**, compatible  **iOS 7/8** et respectant le standard **autolayout** (pas de .xib, ni de .storyboard).
 L'application se compose d'une seule fiche restaurant.
 
 
