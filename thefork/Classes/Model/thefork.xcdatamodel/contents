@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="TFPicture" representedClassName="TFPicture" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="612x344"/>
+            </userInfo>
+        </attribute>
+        <relationship name="restaurant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TFRestaurant" inverseName="diaporamaPictures" inverseEntity="TFRestaurant" syncable="YES"/>
+    </entity>
+    <entity name="TFRestaurant" representedClassName="TFRestaurant" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="averageRate" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="avg_rate"/>
+            </userInfo>
+        </attribute>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="currency_code"/>
+            </userInfo>
+        </attribute>
+        <attribute name="gpsLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="gps_lat"/>
+            </userInfo>
+        </attribute>
+        <attribute name="gpsLongitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="gps_long"/>
+            </userInfo>
+        </attribute>
+        <attribute name="mainPictureUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minPrice" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="min_price"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rateCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="rate_count"/>
+            </userInfo>
+        </attribute>
+        <attribute name="remoteId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="id_restaurant"/>
+            </userInfo>
+        </attribute>
+        <attribute name="speciality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="zipcode"/>
+            </userInfo>
+        </attribute>
+        <relationship name="diaporamaPictures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TFPicture" inverseName="restaurant" inverseEntity="TFPicture" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TFRestaurant" positionX="-63" positionY="-18" width="128" height="255"/>
+        <element name="TFPicture" positionX="-54" positionY="-9" width="128" height="90"/>
+    </elements>
+</model>

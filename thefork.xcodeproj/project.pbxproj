@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC6F81C493123D67EF3B575A /* TFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8F743F8EF7A9412CA49A /* TFAppDelegate.m */; };
+		CC6F84214E24A65682FAA341 /* thefork.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = CC6F823E804367F50976F6CA /* thefork.xcdatamodel */; };
+		CC6F8444510EFAB2F56B7ACF /* TFRestaurantRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F89759F7A25B06E442CFC /* TFRestaurantRecordViewController.m */; };
+		CC6F849DA094244142F9CBD4 /* TFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8A703E93919044A1C873 /* TFHTTPRequestOperationManager.m */; };
+		CC6F854DD5746F3BE9D28ECE /* TFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F848D77B258C83554B69B /* TFRequestManager.m */; };
+		CC6F869351C91638323AC9FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8F5277F5AE770A482439 /* Images.xcassets */; };
+		CC6F86E59D9E8E45FA274064 /* TFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F89B1BED7A0464119EC03 /* TFConfiguration.m */; };
+		CC6F88D91FEC1D97E9D44E98 /* TFRestaurantManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8AF627ED86B0EF24CBF1 /* TFRestaurantManager.m */; };
+		CC6F89FAF2DE3CC6D15A8DDC /* theforkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F86E0E838DAE1DE3FBBC1 /* theforkTests.m */; };
+		CC6F8A433053FB750E518935 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */; };
+		CC6F8B68B85EEE2CBF684405 /* TFAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8F3081F95EBF9423A716 /* TFAPI.m */; };
+		CC6F8B91E0D47F9C6C10374C /* TFRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F88F13B141867359B5158 /* TFRestaurant.m */; };
+		CC6F8C065D739C089BA25388 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F82962A13C515E8B66E8C /* main.m */; };
+		CC6F8C4BDDF3CC7854E2A32A /* TFFunctionAndFileLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8AB0D05E63351DE0A78E /* TFFunctionAndFileLogFormatter.m */; };
+		CC6F8C8DC364D59C742CC732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8A9C590639B2EE9779DA /* Main.storyboard */; };
+		CC6F8E2DECBDF891606EEA1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6F89FC8A3CF245B286439F /* LaunchScreen.xib */; };
+		CC6F8F405B890C1E0D167EC6 /* TFPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8CAF0AEC57E1F2657338 /* TFPicture.m */; };
+		CE37AAE903DDF9A17F8723C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9E29D0EF0297C723F997F5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC6F82FBE93B1993F0FC7B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC6F891A1DAE9CA843C774B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC6F8F6661ECAF34866FD72C;
+			remoteInfo = thefork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E9E29D0EF0297C723F997F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D495BF8A09E20C4FC3EC0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B70F52E17BFB16C6177C39FA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CC6F823E804367F50976F6CA /* thefork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = thefork.xcdatamodel; sourceTree = "<group>"; };
+		CC6F828398DD35D1931709D2 /* TFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRequestManager.h; sourceTree = "<group>"; };
+		CC6F82962A13C515E8B66E8C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC6F835581900BD44253313D /* TFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		CC6F848D77B258C83554B69B /* TFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRequestManager.m; sourceTree = "<group>"; };
+		CC6F84C18A2B0D791682B7C4 /* thefork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thefork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6F84EF28C3C83E33C06214 /* TFRestaurantManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantManager.h; sourceTree = "<group>"; };
+		CC6F853E5B16440671A5F24C /* TFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAppDelegate.h; sourceTree = "<group>"; };
+		CC6F85A15C4F13C0EE3BE6DB /* theforkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theforkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6F86E0E838DAE1DE3FBBC1 /* theforkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = theforkTests.m; sourceTree = "<group>"; };
+		CC6F87EF6DF9343345BA172E /* TFFunctionAndFileLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFunctionAndFileLogFormatter.h; sourceTree = "<group>"; };
+		CC6F88F13B141867359B5158 /* TFRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurant.m; sourceTree = "<group>"; };
+		CC6F89571A1E22BBF6C0AF1B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		CC6F89759F7A25B06E442CFC /* TFRestaurantRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantRecordViewController.m; sourceTree = "<group>"; };
+		CC6F89B1BED7A0464119EC03 /* TFConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFConfiguration.m; sourceTree = "<group>"; };
+		CC6F8A703E93919044A1C873 /* TFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		CC6F8AB0D05E63351DE0A78E /* TFFunctionAndFileLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFunctionAndFileLogFormatter.m; sourceTree = "<group>"; };
+		CC6F8AC7CEA29E5D40E48218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = thefork/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CC6F8AF627ED86B0EF24CBF1 /* TFRestaurantManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantManager.m; sourceTree = "<group>"; };
+		CC6F8B92E70C125CDE7BC13D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		CC6F8BF5F2E1DDDA30AB3541 /* TFRestaurantRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantRecordViewController.h; sourceTree = "<group>"; };
+		CC6F8C7DE94D97CDB6D9078E /* TFConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFConfiguration.h; sourceTree = "<group>"; };
+		CC6F8CA44E824A0CD48A2B08 /* TFRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurant.h; sourceTree = "<group>"; };
+		CC6F8CAF0AEC57E1F2657338 /* TFPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPicture.m; sourceTree = "<group>"; };
+		CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
+		CC6F8DA734E9270D14C717F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = thefork/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		CC6F8E707565AA7340A5B2E3 /* TFAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAPI.h; sourceTree = "<group>"; };
+		CC6F8E996D27396A97593636 /* TFPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPicture.h; sourceTree = "<group>"; };
+		CC6F8F3081F95EBF9423A716 /* TFAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFAPI.m; sourceTree = "<group>"; };
+		CC6F8F5277F5AE770A482439 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CC6F8F5E72F86CAB28ED4D9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		CC6F8F743F8EF7A9412CA49A /* TFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC6F88383CDEC47A57897709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE37AAE903DDF9A17F8723C2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6F8E65623E4B763A2D3B63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CA20297A7850B849CB7C6F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B70F52E17BFB16C6177C39FA /* Pods.debug.xcconfig */,
+				79D495BF8A09E20C4FC3EC0C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A61945039943B4F523345D1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E9E29D0EF0297C723F997F5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC6F801F5B79F8FBD0D78341 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F835581900BD44253313D /* TFHTTPRequestOperationManager.h */,
+				CC6F8A703E93919044A1C873 /* TFHTTPRequestOperationManager.m */,
+				CC6F848D77B258C83554B69B /* TFRequestManager.m */,
+				CC6F828398DD35D1931709D2 /* TFRequestManager.h */,
+				CC6F8AF627ED86B0EF24CBF1 /* TFRestaurantManager.m */,
+				CC6F84EF28C3C83E33C06214 /* TFRestaurantManager.h */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CC6F8027112B700336EBD311 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8A9C590639B2EE9779DA /* Main.storyboard */,
+				CC6F89FC8A3CF245B286439F /* LaunchScreen.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC6F8173491501C0BA719ECA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8B92E70C125CDE7BC13D /* Info.plist */,
+				CC6F82962A13C515E8B66E8C /* main.m */,
+				CC6F89571A1E22BBF6C0AF1B /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC6F82A1A42F8EA5036ECD67 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F87EF6DF9343345BA172E /* TFFunctionAndFileLogFormatter.h */,
+				CC6F8AB0D05E63351DE0A78E /* TFFunctionAndFileLogFormatter.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CC6F82EE8A4601C235FA6BF0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8C7DE94D97CDB6D9078E /* TFConfiguration.h */,
+				CC6F89B1BED7A0464119EC03 /* TFConfiguration.m */,
+				CC6F8F3081F95EBF9423A716 /* TFAPI.m */,
+				CC6F8E707565AA7340A5B2E3 /* TFAPI.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CC6F82F125B991032ACC211B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC6F8393BA533174E30B69BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8F743F8EF7A9412CA49A /* TFAppDelegate.m */,
+				CC6F853E5B16440671A5F24C /* TFAppDelegate.h */,
+				CC6F8EE64A627E1DCCC52AFD /* Model */,
+				CC6F8027112B700336EBD311 /* View */,
+				CC6F8B2EC28DC100DBCBA7B8 /* Controller */,
+				CC6F801F5B79F8FBD0D78341 /* Manager */,
+				CC6F82A1A42F8EA5036ECD67 /* Logger */,
+				CC6F82EE8A4601C235FA6BF0 /* Configuration */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CC6F83E3D4FA855EAA650063 /* thefork */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8393BA533174E30B69BE /* Classes */,
+				CC6F82F125B991032ACC211B /* Resources */,
+				CC6F8173491501C0BA719ECA /* Supporting Files */,
+				CC6F8F5277F5AE770A482439 /* Images.xcassets */,
+			);
+			path = thefork;
+			sourceTree = "<group>";
+		};
+		CC6F84EB8F0252CC5950C44E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F84C18A2B0D791682B7C4 /* thefork.app */,
+				CC6F85A15C4F13C0EE3BE6DB /* theforkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC6F875420DEC541A7508B82 = {
+			isa = PBXGroup;
+			children = (
+				CC6F84EB8F0252CC5950C44E /* Products */,
+				CC6F83E3D4FA855EAA650063 /* thefork */,
+				CC6F89C691036D43E347A5C4 /* theforkTests */,
+				1CA20297A7850B849CB7C6F2 /* Pods */,
+				A61945039943B4F523345D1A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC6F89C5F3B00E40F649F4F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8F5E72F86CAB28ED4D9E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC6F89C691036D43E347A5C4 /* theforkTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F89C5F3B00E40F649F4F2 /* Supporting Files */,
+				CC6F86E0E838DAE1DE3FBBC1 /* theforkTests.m */,
+			);
+			path = theforkTests;
+			sourceTree = "<group>";
+		};
+		CC6F8B2EC28DC100DBCBA7B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F89759F7A25B06E442CFC /* TFRestaurantRecordViewController.m */,
+				CC6F8BF5F2E1DDDA30AB3541 /* TFRestaurantRecordViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC6F8EE64A627E1DCCC52AFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F823E804367F50976F6CA /* thefork.xcdatamodel */,
+				CC6F88F13B141867359B5158 /* TFRestaurant.m */,
+				CC6F8CA44E824A0CD48A2B08 /* TFRestaurant.h */,
+				CC6F8CAF0AEC57E1F2657338 /* TFPicture.m */,
+				CC6F8E996D27396A97593636 /* TFPicture.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC6F8A9D9B19B6F39646A957 /* theforkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6F813369E7C5FF780486F9 /* Build configuration list for PBXNativeTarget "theforkTests" */;
+			buildPhases = (
+				CC6F8AD4F709529A677288EA /* Sources */,
+				CC6F8E65623E4B763A2D3B63 /* Frameworks */,
+				CC6F80E7886C880F6EAE0FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC6F8EA86ED091C873F31B14 /* PBXTargetDependency */,
+			);
+			name = theforkTests;
+			productName = theforkTests;
+			productReference = CC6F85A15C4F13C0EE3BE6DB /* theforkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC6F8F6661ECAF34866FD72C /* thefork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6F8FB9014AEA44FEC88E75 /* Build configuration list for PBXNativeTarget "thefork" */;
+			buildPhases = (
+				6F1336DB2CFC9E401C0B7F31 /* Check Pods Manifest.lock */,
+				CC6F8508DCB0F78E00071BEC /* Sources */,
+				CC6F88383CDEC47A57897709 /* Frameworks */,
+				CC6F827CAD3E7BB5332646AF /* Resources */,
+				BCB959D671B9532B532D017F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thefork;
+			productName = thefork;
+			productReference = CC6F84C18A2B0D791682B7C4 /* thefork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC6F891A1DAE9CA843C774B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = thefork;
+			};
+			buildConfigurationList = CC6F83E066E6C73CDABA1095 /* Build configuration list for PBXProject "thefork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC6F875420DEC541A7508B82;
+			productRefGroup = CC6F84EB8F0252CC5950C44E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC6F8F6661ECAF34866FD72C /* thefork */,
+				CC6F8A9D9B19B6F39646A957 /* theforkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC6F80E7886C880F6EAE0FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6F827CAD3E7BB5332646AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6F8C8DC364D59C742CC732 /* Main.storyboard in Resources */,
+				CC6F8E2DECBDF891606EEA1D /* LaunchScreen.xib in Resources */,
+				CC6F869351C91638323AC9FF /* Images.xcassets in Resources */,
+				CC6F8A433053FB750E518935 /* Configurations.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F1336DB2CFC9E401C0B7F31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCB959D671B9532B532D017F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC6F8508DCB0F78E00071BEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6F81C493123D67EF3B575A /* TFAppDelegate.m in Sources */,
+				CC6F8C065D739C089BA25388 /* main.m in Sources */,
+				CC6F84214E24A65682FAA341 /* thefork.xcdatamodel in Sources */,
+				CC6F8444510EFAB2F56B7ACF /* TFRestaurantRecordViewController.m in Sources */,
+				CC6F8C4BDDF3CC7854E2A32A /* TFFunctionAndFileLogFormatter.m in Sources */,
+				CC6F86E59D9E8E45FA274064 /* TFConfiguration.m in Sources */,
+				CC6F849DA094244142F9CBD4 /* TFHTTPRequestOperationManager.m in Sources */,
+				CC6F854DD5746F3BE9D28ECE /* TFRequestManager.m in Sources */,
+				CC6F8B91E0D47F9C6C10374C /* TFRestaurant.m in Sources */,
+				CC6F8F405B890C1E0D167EC6 /* TFPicture.m in Sources */,
+				CC6F88D91FEC1D97E9D44E98 /* TFRestaurantManager.m in Sources */,
+				CC6F8B68B85EEE2CBF684405 /* TFAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6F8AD4F709529A677288EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6F89FAF2DE3CC6D15A8DDC /* theforkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC6F8EA86ED091C873F31B14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC6F8F6661ECAF34866FD72C /* thefork */;
+			targetProxy = CC6F82FBE93B1993F0FC7B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC6F89FC8A3CF245B286439F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6F8DA734E9270D14C717F0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CC6F8A9C590639B2EE9779DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6F8AC7CEA29E5D40E48218 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC6F80E62149047CBC7DE541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC6F82C8B5FDCEE7919DF78A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC6F87E5E70D883674E14020 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D495BF8A09E20C4FC3EC0C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = thefork/Prefix.pch;
+				INFOPLIST_FILE = thefork/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		CC6F89AB09F2A1B28EC73D97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/thefork.app/thefork";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = theforkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		CC6F8BC2E549C29C8988BD08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B70F52E17BFB16C6177C39FA /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = thefork/Prefix.pch;
+				INFOPLIST_FILE = thefork/Info.plist;
+				INFOPLIST_PREFIX_HEADER = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		CC6F8D4612D425A96918EDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/thefork.app/thefork";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = theforkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC6F813369E7C5FF780486F9 /* Build configuration list for PBXNativeTarget "theforkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6F8D4612D425A96918EDFB /* Debug */,
+				CC6F89AB09F2A1B28EC73D97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC6F83E066E6C73CDABA1095 /* Build configuration list for PBXProject "thefork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6F82C8B5FDCEE7919DF78A /* Debug */,
+				CC6F80E62149047CBC7DE541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC6F8FB9014AEA44FEC88E75 /* Build configuration list for PBXNativeTarget "thefork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6F8BC2E549C29C8988BD08 /* Debug */,
+				CC6F87E5E70D883674E14020 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC6F891A1DAE9CA843C774B3 /* Project object */;
+}
