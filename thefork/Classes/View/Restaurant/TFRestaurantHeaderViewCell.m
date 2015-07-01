@@ -6,6 +6,7 @@
 #import "TFRestaurantHeaderLabel.h"
 #import "FAKIonIcons.h"
 #import "NSArray+PureLayout.h"
+#import "TFRestaurantHeaderBarButton.h"
 
 @interface TFRestaurantHeaderViewCell ()
 
@@ -18,9 +19,9 @@
 @property(nonatomic, strong) TFRestaurantHeaderLabel *nameLabel;
 @property(nonatomic, strong) TFRestaurantHeaderLabel *addressLabel;
 
-@property(nonatomic, strong) UIButton *picturesBarButton;
-@property(nonatomic, strong) UIButton *reviewsBarButton;
-@property(nonatomic, strong) UIButton *mapBarButton;
+@property(nonatomic, strong) TFRestaurantHeaderBarButton *picturesBarButton;
+@property(nonatomic, strong) TFRestaurantHeaderBarButton *reviewsBarButton;
+@property(nonatomic, strong) TFRestaurantHeaderBarButton *mapBarButton;
 
 @end
 
@@ -40,6 +41,7 @@
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         [self addSubview:self.imageView];
 
+
         self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self.backButton setAttributedTitle:[FAKIonIcons iosArrowLeftIconWithSize:40].attributedString forState:UIControlStateNormal];
         self.backButton.titleLabel.textColor = [UIColor whiteColor];
@@ -55,6 +57,7 @@
         self.likeButton.titleLabel.textColor = [UIColor whiteColor];
         [self addSubview:self.likeButton];
 
+
         self.nameLabel = [TFRestaurantHeaderLabel new];
         self.nameLabel.font = [self.nameLabel.font fontWithSize:30];
         [self addSubview:self.nameLabel];
@@ -63,19 +66,20 @@
         self.addressLabel.font = [self.addressLabel.font fontWithSize:15];
         [self addSubview:self.addressLabel];
 
-        self.picturesBarButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+
+        self.picturesBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
         [self.picturesBarButton setTitle:NSLocalizedString(@"PICTURE_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
-        [self.picturesBarButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.picturesBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.picturesBarButton];
 
-        self.reviewsBarButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        self.reviewsBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
         [self.reviewsBarButton setTitle:NSLocalizedString(@"REVIEWS_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
-        [self.reviewsBarButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.reviewsBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.reviewsBarButton];
 
-        self.mapBarButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        self.mapBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
         [self.mapBarButton setTitle:NSLocalizedString(@"MAP_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
-        [self.mapBarButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self.mapBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.mapBarButton];
     }
 
@@ -124,6 +128,22 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:restaurant.mainPictureUrl]];
     self.nameLabel.text = restaurant.name;
     self.addressLabel.text = [NSString stringWithFormat:@"%@, %@, %@", restaurant.address, restaurant.zipCode, restaurant.city];
+}
+
+#pragma mark - Private methods
+
+- (void)didTapBarButton:(TFRestaurantHeaderBarButton *)view {
+    for (UIButton *button in @[self.picturesBarButton, self.reviewsBarButton, self.mapBarButton])
+        [button setSelected:[button isEqual:view]];
+
+    if ([view isEqual:self.picturesBarButton])
+        [self.delegate restaurantHeaderViewCell:self didTapMapBarButton:self.picturesBarButton];
+    else if ([view isEqual:self.reviewsBarButton])
+        [self.delegate restaurantHeaderViewCell:self didTapReviewsBarButton:self.reviewsBarButton];
+    else if ([view isEqual:self.mapBarButton])
+        [self.delegate restaurantHeaderViewCell:self didTapReviewsBarButton:self.mapBarButton];
+    else
+        DDLogWarn(@"This condition shouldn't happen. Probably a bug you should fix.");
 }
 
 @end

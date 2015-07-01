@@ -3,8 +3,9 @@
 #import "TFRestaurantHeaderViewCell.h"
 #import "TFRestaurantRecordViewFlowLayout.h"
 #import "TFRestaurantRateViewCell.h"
+#import "TFRestaurantHeaderBarButton.h"
 
-@interface TFRestaurantRecordViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface TFRestaurantRecordViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, TFRestaurantHeaderViewCellDelegate>
 
 @property(nonatomic, strong) TFRestaurant *restaurant;
 
@@ -66,10 +67,25 @@
         TFRestaurantHeaderViewCell *cell = [self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                                                                                    withReuseIdentifier:NSStringFromClass([TFRestaurantHeaderViewCell class])
                                                                                           forIndexPath:indexPath];
+        cell.delegate = self;
         [cell updateWithRestaurant:self.restaurant];
         return cell;
     }
     return nil;
+}
+
+#pragma mark - TFRestaurantHeaderViewCellDelegate
+
+- (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell didTapPicturesBarButton:(TFRestaurantHeaderBarButton *)button {
+
+}
+
+- (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell didTapReviewsBarButton:(TFRestaurantHeaderBarButton *)button {
+
+}
+
+- (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell didTapMapBarButton:(TFRestaurantHeaderBarButton *)button {
+
 }
 
 @end
