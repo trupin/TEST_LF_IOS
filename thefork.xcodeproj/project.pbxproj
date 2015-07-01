@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC6F801311FB84E45E6E31E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8F5CC7E5B61F89054AFF /* Localizable.strings */; };
 		CC6F807AE85040F12654A0AC /* TFRestaurantHeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F89D4C43A08E2F18E4169 /* TFRestaurantHeaderLabel.m */; };
 		CC6F81C493123D67EF3B575A /* TFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8F743F8EF7A9412CA49A /* TFAppDelegate.m */; };
 		CC6F8355CC6F5AD2F0FCC00C /* TFRestaurantRecordViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8048DE63BF075BB7A613 /* TFRestaurantRecordViewFlowLayout.m */; };
@@ -17,6 +18,7 @@
 		CC6F855C46D1B6D9A542354B /* TFRestaurantRateViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8638CABF53F1D5936085 /* TFRestaurantRateViewCell.m */; };
 		CC6F869351C91638323AC9FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8F5277F5AE770A482439 /* Images.xcassets */; };
 		CC6F86E59D9E8E45FA274064 /* TFConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F89B1BED7A0464119EC03 /* TFConfiguration.m */; };
+		CC6F8899FD9728557FB74F96 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8C5C453DD4C616A5EA4A /* Localizable.strings */; };
 		CC6F88D91FEC1D97E9D44E98 /* TFRestaurantManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8AF627ED86B0EF24CBF1 /* TFRestaurantManager.m */; };
 		CC6F89FAF2DE3CC6D15A8DDC /* theforkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F86E0E838DAE1DE3FBBC1 /* theforkTests.m */; };
 		CC6F8A433053FB750E518935 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */; };
@@ -59,6 +61,7 @@
 		CC6F85A15C4F13C0EE3BE6DB /* theforkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theforkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6F8638CABF53F1D5936085 /* TFRestaurantRateViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantRateViewCell.m; sourceTree = "<group>"; };
 		CC6F86E0E838DAE1DE3FBBC1 /* theforkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = theforkTests.m; sourceTree = "<group>"; };
+		CC6F87BEB16A920793206384 /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = Localizable.strings; sourceTree = "<group>"; };
 		CC6F87EF6DF9343345BA172E /* TFFunctionAndFileLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFunctionAndFileLogFormatter.h; sourceTree = "<group>"; };
 		CC6F88F13B141867359B5158 /* TFRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurant.m; sourceTree = "<group>"; };
 		CC6F89571A1E22BBF6C0AF1B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		CC6F8D5D1FA3ADCDA26EBB1D /* TFRestaurantRecordViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantRecordViewFlowLayout.h; sourceTree = "<group>"; };
 		CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		CC6F8DA734E9270D14C717F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = thefork/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		CC6F8DD5474AF1551B8F8177 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		CC6F8E707565AA7340A5B2E3 /* TFAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAPI.h; sourceTree = "<group>"; };
 		CC6F8E996D27396A97593636 /* TFPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPicture.h; sourceTree = "<group>"; };
 		CC6F8EDC9100B2DA6C271052 /* TFRestaurantHeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantHeaderViewCell.m; sourceTree = "<group>"; };
@@ -177,8 +181,26 @@
 			isa = PBXGroup;
 			children = (
 				CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */,
+				CC6F82F56780BD7F811FA6CF /* en.lproj */,
+				CC6F834092C4FC0C29AA81B9 /* fr.lproj */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CC6F82F56780BD7F811FA6CF /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8F5CC7E5B61F89054AFF /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		CC6F834092C4FC0C29AA81B9 /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8C5C453DD4C616A5EA4A /* Localizable.strings */,
+			);
+			path = fr.lproj;
 			sourceTree = "<group>";
 		};
 		CC6F8393BA533174E30B69BE /* Classes */ = {
@@ -369,6 +391,8 @@
 				CC6F8E2DECBDF891606EEA1D /* LaunchScreen.xib in Resources */,
 				CC6F869351C91638323AC9FF /* Images.xcassets in Resources */,
 				CC6F8A433053FB750E518935 /* Configurations.plist in Resources */,
+				CC6F801311FB84E45E6E31E5 /* Localizable.strings in Resources */,
+				CC6F8899FD9728557FB74F96 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +480,22 @@
 				CC6F8DA734E9270D14C717F0 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CC6F8C5C453DD4C616A5EA4A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6F87BEB16A920793206384 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CC6F8F5CC7E5B61F89054AFF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC6F8DD5474AF1551B8F8177 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -6,7 +6,7 @@
     self = [super init];
 
     if (self) {
-        self.headerReferenceSize = CGSizeMake(0, 200);
+        self.headerReferenceSize = CGSizeMake(0, 270);
     }
 
     return self;
