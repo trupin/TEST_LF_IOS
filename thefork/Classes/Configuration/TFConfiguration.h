@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 
 FOUNDATION_EXPORT NSString *const kTFConfigurationApiEndPoint;
+FOUNDATION_EXPORT NSString *const kTFConfigurationGMapsApiKey;
 
 @interface TFConfiguration : NSObject
 
@@ -9,4 +10,5 @@ FOUNDATION_EXPORT NSString *const kTFConfigurationApiEndPoint;
 + (NSString *)APIEndpoint;
 + (NSString *)route: (NSString *)routeString;
 
++ (NSString *)GMapsApiKey;
 @end

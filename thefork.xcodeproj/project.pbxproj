@@ -24,6 +24,7 @@
 		CC6F88D91FEC1D97E9D44E98 /* TFRestaurantManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8AF627ED86B0EF24CBF1 /* TFRestaurantManager.m */; };
 		CC6F89FAF2DE3CC6D15A8DDC /* theforkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F86E0E838DAE1DE3FBBC1 /* theforkTests.m */; };
 		CC6F8A433053FB750E518935 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */; };
+		CC6F8ACC6291CDF0B3710E98 /* TFRestaurantMapViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F82A6FFB271EE4B30916D /* TFRestaurantMapViewCell.m */; };
 		CC6F8B68B85EEE2CBF684405 /* TFAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8F3081F95EBF9423A716 /* TFAPI.m */; };
 		CC6F8B7E98AFD3816CFB7CD6 /* TFRestaurantHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8EDC9100B2DA6C271052 /* TFRestaurantHeaderViewCell.m */; };
 		CC6F8B91E0D47F9C6C10374C /* TFRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F88F13B141867359B5158 /* TFRestaurant.m */; };
@@ -55,6 +56,7 @@
 		CC6F828398DD35D1931709D2 /* TFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRequestManager.h; sourceTree = "<group>"; };
 		CC6F82962A13C515E8B66E8C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC6F829BABD9D2E2C7C5904E /* TFRestaurantReviewViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantReviewViewCell.h; sourceTree = "<group>"; };
+		CC6F82A6FFB271EE4B30916D /* TFRestaurantMapViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantMapViewCell.m; sourceTree = "<group>"; };
 		CC6F835581900BD44253313D /* TFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
 		CC6F848A68C85DB7182EACFC /* TFRestaurantHeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantHeaderLabel.h; sourceTree = "<group>"; };
 		CC6F848D77B258C83554B69B /* TFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRequestManager.m; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		CC6F8AF627ED86B0EF24CBF1 /* TFRestaurantManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantManager.m; sourceTree = "<group>"; };
 		CC6F8B92E70C125CDE7BC13D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		CC6F8BF5F2E1DDDA30AB3541 /* TFRestaurantRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantRecordViewController.h; sourceTree = "<group>"; };
+		CC6F8C2723C41996AD694F04 /* TFRestaurantMapViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantMapViewCell.h; sourceTree = "<group>"; };
 		CC6F8C7DE94D97CDB6D9078E /* TFConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFConfiguration.h; sourceTree = "<group>"; };
 		CC6F8CA44E824A0CD48A2B08 /* TFRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurant.h; sourceTree = "<group>"; };
 		CC6F8CAF0AEC57E1F2657338 /* TFPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPicture.m; sourceTree = "<group>"; };
@@ -253,6 +256,8 @@
 				CC6F8830AE0EFFC13E4F7E8C /* TFRestaurantHeaderBarButton.h */,
 				CC6F8FF58CDA8F538749CAFB /* TFRestaurantPictureViewCell.m */,
 				CC6F88519E12779EB46866B4 /* TFRestaurantPictureViewCell.h */,
+				CC6F8C2723C41996AD694F04 /* TFRestaurantMapViewCell.h */,
+				CC6F82A6FFB271EE4B30916D /* TFRestaurantMapViewCell.m */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 				CC6F8449F13CB465399E7864 /* UIImage+TFUtil.m in Sources */,
 				CC6F8035BF9D2B8AAE3C2C50 /* TFRestaurantHeaderBarButton.m in Sources */,
 				CC6F8CCFA7F78E21CD5F3372 /* TFRestaurantPictureViewCell.m in Sources */,
+				CC6F8ACC6291CDF0B3710E98 /* TFRestaurantMapViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

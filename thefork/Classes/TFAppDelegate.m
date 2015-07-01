@@ -3,6 +3,8 @@
 #import "TFRestaurantManager.h"
 #import "BFTask.h"
 #import "TFRestaurantRecordViewController.h"
+#import "GoogleMaps/GoogleMaps.h"
+#import "TFConfiguration.h"
 
 @interface TFAppDelegate ()
 
@@ -14,6 +16,7 @@
 
     [self setupLogger];
     [self setupMagicalRecord];
+    [self setupGMaps];
     [self setupWindow];
 
     return YES;
@@ -31,6 +34,11 @@
 - (void)setupLogger {
     DDTTYLogger *ttyLogger = [DDTTYLogger sharedInstance];
     [ttyLogger setLogFormatter:[TFFunctionAndFileLogFormatter new]];
+}
+
+- (void)setupGMaps {
+    if ([TFConfiguration GMapsApiKey])
+        [GMSServices provideAPIKey:[TFConfiguration GMapsApiKey]];
 }
 
 - (void)setupWindow {

@@ -1,6 +1,7 @@
 #include "TFConfiguration.h"
 
 NSString *const kTFConfigurationApiEndPoint = @"ApiEndPoint";
+NSString *const kTFConfigurationGMapsApiKey = @"GMapsApiKey";
 
 @interface TFConfiguration ()
 
@@ -74,6 +75,10 @@ NSString *const kTFConfigurationApiEndPoint = @"ApiEndPoint";
 
 + (NSString *)route:(NSString *)routeString {
     return [[TFConfiguration APIEndpoint] stringByAppendingString:routeString];
+}
+
++ (NSString *)GMapsApiKey {
+    return [TFConfiguration sharedConfiguration].variables[kTFConfigurationGMapsApiKey];
 }
 
 @end

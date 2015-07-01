@@ -5,6 +5,7 @@
 #import "TFRestaurantReviewViewCell.h"
 #import "TFRestaurantPictureViewCell.h"
 #import "TFPicture.h"
+#import "TFRestaurantMapViewCell.h"
 
 @interface TFRestaurantRecordViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, TFRestaurantHeaderViewCellDelegate>
 
@@ -39,6 +40,9 @@
 
     [self.collectionView registerClass:[TFRestaurantReviewViewCell class]
             forCellWithReuseIdentifier:NSStringFromClass([TFRestaurantReviewViewCell class])];
+
+    [self.collectionView registerClass:[TFRestaurantMapViewCell class]
+            forCellWithReuseIdentifier:NSStringFromClass([TFRestaurantMapViewCell class])];
 
     [self.collectionView registerClass:[TFRestaurantHeaderViewCell class]
             forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
@@ -82,7 +86,7 @@
             return cell;
         }
         case TFRestaurantHeaderViewCellBarStateMap: {
-            TFRestaurantReviewViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([TFRestaurantReviewViewCell class]) forIndexPath:indexPath];
+            TFRestaurantMapViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([TFRestaurantMapViewCell class]) forIndexPath:indexPath];
 
             return cell;
         }
