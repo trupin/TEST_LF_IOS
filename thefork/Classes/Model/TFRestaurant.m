@@ -3,6 +3,8 @@
 
 @implementation TFRestaurant
 
+@dynamic date;
+
 @dynamic remoteId;
 @dynamic name;
 @dynamic gpsLatitude;

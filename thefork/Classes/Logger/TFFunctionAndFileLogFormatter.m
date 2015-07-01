@@ -1,7 +1,9 @@
 #import "TFFunctionAndFileLogFormatter.h"
 
 @interface TFFunctionAndFileLogFormatter ()
+
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage;
+
 @end
 
 @implementation TFFunctionAndFileLogFormatter
@@ -10,6 +12,7 @@
 
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage {
     NSString *logLevel = nil;
+
     if (logMessage.level == DDLogFlagError)
         logLevel = @"E";
     else if (logMessage.level == DDLogFlagWarning)

@@ -4,10 +4,9 @@ pod 'CocoaLumberjack'
 
 pod 'AFNetworking'
 pod 'Bolts'
-pod 'JSONModel'
+pod 'KVOController'
 
 pod 'MagicalRecord', :git => 'https://github.com/magicalpanda/MagicalRecord.git', :branch => 'develop'
 
 pod 'SDWebImage'
 pod 'FontAwesomeKit'
-pod 'ComponentKit'

@@ -1,5 +1,10 @@
 #import <UIKit/UIKit.h>
 
-@interface TFRestaurantRecordViewController : UIViewController
+@class TFRestaurant;
+
+@interface TFRestaurantRecordViewController : UICollectionViewController
+
+- (instancetype)initWithRestaurant:(TFRestaurant *)restaurant;
++ (instancetype)controllerWithRestaurant:(TFRestaurant *)restaurant;
 
 @end

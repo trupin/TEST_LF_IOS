@@ -1,5 +1,8 @@
 #import "TFAppDelegate.h"
 #import "TFFunctionAndFileLogFormatter.h"
+#import "TFRestaurantManager.h"
+#import "BFTask.h"
+#import "TFRestaurantRecordViewController.h"
 
 @interface TFAppDelegate ()
 
@@ -11,6 +14,7 @@
 
     [self setupLogger];
     [self setupMagicalRecord];
+    [self setupWindow];
 
     return YES;
 }
@@ -24,10 +28,20 @@
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:appVersion];
 }
 
-
 - (void)setupLogger {
     DDTTYLogger *ttyLogger = [DDTTYLogger sharedInstance];
     [ttyLogger setLogFormatter:[TFFunctionAndFileLogFormatter new]];
+}
+
+- (void)setupWindow {
+
+    [[[TFRestaurantManager instance] getRestaurantWithRemoteId:@6861] continueWithSuccessBlock:^id(BFTask *task) {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+        self.window.rootViewController = [TFRestaurantRecordViewController controllerWithRestaurant:task.result];
+        [self.window makeKeyAndVisible];
+        return nil;
+    }];
 }
 
 @end

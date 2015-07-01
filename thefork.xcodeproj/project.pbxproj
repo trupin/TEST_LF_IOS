@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CC6F81C493123D67EF3B575A /* TFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8F743F8EF7A9412CA49A /* TFAppDelegate.m */; };
+		CC6F829C292D855F51A2B8FF /* TFRestaurantHeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F87AE436D63F127C2A73F /* TFRestaurantHeaderViewCell.m */; };
+		CC6F8355CC6F5AD2F0FCC00C /* TFRestaurantRecordViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8048DE63BF075BB7A613 /* TFRestaurantRecordViewFlowLayout.m */; };
+		CC6F839293E22705877145F9 /* TFRestaurantRateViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8780527B564D22B33809 /* TFRestaurantRateViewCell.m */; };
 		CC6F84214E24A65682FAA341 /* thefork.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = CC6F823E804367F50976F6CA /* thefork.xcdatamodel */; };
 		CC6F8444510EFAB2F56B7ACF /* TFRestaurantRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F89759F7A25B06E442CFC /* TFRestaurantRecordViewController.m */; };
 		CC6F849DA094244142F9CBD4 /* TFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8A703E93919044A1C873 /* TFHTTPRequestOperationManager.m */; };
@@ -21,7 +24,6 @@
 		CC6F8B91E0D47F9C6C10374C /* TFRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F88F13B141867359B5158 /* TFRestaurant.m */; };
 		CC6F8C065D739C089BA25388 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F82962A13C515E8B66E8C /* main.m */; };
 		CC6F8C4BDDF3CC7854E2A32A /* TFFunctionAndFileLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8AB0D05E63351DE0A78E /* TFFunctionAndFileLogFormatter.m */; };
-		CC6F8C8DC364D59C742CC732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8A9C590639B2EE9779DA /* Main.storyboard */; };
 		CC6F8E2DECBDF891606EEA1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6F89FC8A3CF245B286439F /* LaunchScreen.xib */; };
 		CC6F8F405B890C1E0D167EC6 /* TFPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8CAF0AEC57E1F2657338 /* TFPicture.m */; };
 		CE37AAE903DDF9A17F8723C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9E29D0EF0297C723F997F5 /* libPods.a */; };
@@ -41,6 +43,8 @@
 		1E9E29D0EF0297C723F997F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D495BF8A09E20C4FC3EC0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B70F52E17BFB16C6177C39FA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CC6F8048DE63BF075BB7A613 /* TFRestaurantRecordViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantRecordViewFlowLayout.m; sourceTree = "<group>"; };
+		CC6F80F6C212CD41BD8006C2 /* TFRestaurantRateViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantRateViewCell.h; sourceTree = "<group>"; };
 		CC6F823E804367F50976F6CA /* thefork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = thefork.xcdatamodel; sourceTree = "<group>"; };
 		CC6F828398DD35D1931709D2 /* TFRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRequestManager.h; sourceTree = "<group>"; };
 		CC6F82962A13C515E8B66E8C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		CC6F853E5B16440671A5F24C /* TFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAppDelegate.h; sourceTree = "<group>"; };
 		CC6F85A15C4F13C0EE3BE6DB /* theforkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = theforkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6F86E0E838DAE1DE3FBBC1 /* theforkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = theforkTests.m; sourceTree = "<group>"; };
+		CC6F8780527B564D22B33809 /* TFRestaurantRateViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantRateViewCell.m; sourceTree = "<group>"; };
+		CC6F87AE436D63F127C2A73F /* TFRestaurantHeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantHeaderViewCell.m; sourceTree = "<group>"; };
 		CC6F87EF6DF9343345BA172E /* TFFunctionAndFileLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFunctionAndFileLogFormatter.h; sourceTree = "<group>"; };
 		CC6F88F13B141867359B5158 /* TFRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurant.m; sourceTree = "<group>"; };
 		CC6F89571A1E22BBF6C0AF1B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -58,13 +64,14 @@
 		CC6F89B1BED7A0464119EC03 /* TFConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFConfiguration.m; sourceTree = "<group>"; };
 		CC6F8A703E93919044A1C873 /* TFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
 		CC6F8AB0D05E63351DE0A78E /* TFFunctionAndFileLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFunctionAndFileLogFormatter.m; sourceTree = "<group>"; };
-		CC6F8AC7CEA29E5D40E48218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = thefork/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		CC6F8AF627ED86B0EF24CBF1 /* TFRestaurantManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantManager.m; sourceTree = "<group>"; };
 		CC6F8B92E70C125CDE7BC13D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		CC6F8BF5F2E1DDDA30AB3541 /* TFRestaurantRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantRecordViewController.h; sourceTree = "<group>"; };
+		CC6F8C78ECF121D0E1E07211 /* TFRestaurantHeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantHeaderViewCell.h; sourceTree = "<group>"; };
 		CC6F8C7DE94D97CDB6D9078E /* TFConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFConfiguration.h; sourceTree = "<group>"; };
 		CC6F8CA44E824A0CD48A2B08 /* TFRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurant.h; sourceTree = "<group>"; };
 		CC6F8CAF0AEC57E1F2657338 /* TFPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPicture.m; sourceTree = "<group>"; };
+		CC6F8D5D1FA3ADCDA26EBB1D /* TFRestaurantRecordViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantRecordViewFlowLayout.h; sourceTree = "<group>"; };
 		CC6F8D8B59F7F1ED5ADA8F9E /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		CC6F8DA734E9270D14C717F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = thefork/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
 		CC6F8E707565AA7340A5B2E3 /* TFAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFAPI.h; sourceTree = "<group>"; };
@@ -127,8 +134,11 @@
 		CC6F8027112B700336EBD311 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CC6F8A9C590639B2EE9779DA /* Main.storyboard */,
 				CC6F89FC8A3CF245B286439F /* LaunchScreen.xib */,
+				CC6F87AE436D63F127C2A73F /* TFRestaurantHeaderViewCell.m */,
+				CC6F8C78ECF121D0E1E07211 /* TFRestaurantHeaderViewCell.h */,
+				CC6F8780527B564D22B33809 /* TFRestaurantRateViewCell.m */,
+				CC6F80F6C212CD41BD8006C2 /* TFRestaurantRateViewCell.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +192,7 @@
 				CC6F801F5B79F8FBD0D78341 /* Manager */,
 				CC6F82A1A42F8EA5036ECD67 /* Logger */,
 				CC6F82EE8A4601C235FA6BF0 /* Configuration */,
+				CC6F8DA256623A898ACB6ED1 /* Layout */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -241,6 +252,15 @@
 				CC6F8BF5F2E1DDDA30AB3541 /* TFRestaurantRecordViewController.h */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC6F8DA256623A898ACB6ED1 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				CC6F8048DE63BF075BB7A613 /* TFRestaurantRecordViewFlowLayout.m */,
+				CC6F8D5D1FA3ADCDA26EBB1D /* TFRestaurantRecordViewFlowLayout.h */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		CC6F8EE64A627E1DCCC52AFD /* Model */ = {
@@ -333,7 +353,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC6F8C8DC364D59C742CC732 /* Main.storyboard in Resources */,
 				CC6F8E2DECBDF891606EEA1D /* LaunchScreen.xib in Resources */,
 				CC6F869351C91638323AC9FF /* Images.xcassets in Resources */,
 				CC6F8A433053FB750E518935 /* Configurations.plist in Resources */,
@@ -392,6 +411,9 @@
 				CC6F8F405B890C1E0D167EC6 /* TFPicture.m in Sources */,
 				CC6F88D91FEC1D97E9D44E98 /* TFRestaurantManager.m in Sources */,
 				CC6F8B68B85EEE2CBF684405 /* TFAPI.m in Sources */,
+				CC6F829C292D855F51A2B8FF /* TFRestaurantHeaderViewCell.m in Sources */,
+				CC6F8355CC6F5AD2F0FCC00C /* TFRestaurantRecordViewFlowLayout.m in Sources */,
+				CC6F839293E22705877145F9 /* TFRestaurantRateViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,14 +442,6 @@
 				CC6F8DA734E9270D14C717F0 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		CC6F8A9C590639B2EE9779DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC6F8AC7CEA29E5D40E48218 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

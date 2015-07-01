@@ -22,6 +22,7 @@
                 <entry key="mappedKeyName" value="currency_code"/>
             </userInfo>
         </attribute>
+        <attribute name="date" optional="YES" attributeType="Date" defaultDateTimeInterval="457437600" defaultValueString="&quot;now&quot;" syncable="YES"/>
         <attribute name="gpsLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES">
             <userInfo>
                 <entry key="mappedKeyName" value="gps_lat"/>
@@ -58,7 +59,7 @@
         <relationship name="diaporamaPictures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TFPicture" inverseName="restaurant" inverseEntity="TFPicture" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TFRestaurant" positionX="-63" positionY="-18" width="128" height="255"/>
+        <element name="TFRestaurant" positionX="-63" positionY="-18" width="128" height="270"/>
         <element name="TFPicture" positionX="-54" positionY="-9" width="128" height="90"/>
     </elements>
 </model>

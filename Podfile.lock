@@ -34,7 +34,6 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.0.1):
     - CocoaLumberjack/Default
-  - ComponentKit (0.12)
   - FontAwesomeKit (2.2.0):
     - FontAwesomeKit/Core (= 2.2.0)
     - FontAwesomeKit/FontAwesome (= 2.2.0)
@@ -50,7 +49,7 @@ PODS:
     - FontAwesomeKit/Core
   - FontAwesomeKit/Zocial (2.2.0):
     - FontAwesomeKit/Core
-  - JSONModel (1.1.0)
+  - KVOController (1.0.3)
   - MagicalRecord (2.3.0)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
@@ -60,9 +59,8 @@ DEPENDENCIES:
   - AFNetworking
   - Bolts
   - CocoaLumberjack
-  - ComponentKit
   - FontAwesomeKit
-  - JSONModel
+  - KVOController
   - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord.git`, branch
     `develop`)
   - SDWebImage
@@ -81,10 +79,9 @@ SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Bolts: d176cb1e0012175589e389a9db49b85e27787576
   CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
-  ComponentKit: 4bf3ce82a9e28f2ec26ba112102a2120ef312aa6
   FontAwesomeKit: 025fd4dd1017fe4e3f8d47b03e024deedbb33cd4
-  JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
   MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.37.1

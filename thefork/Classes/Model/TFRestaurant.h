@@ -4,6 +4,8 @@
 
 @interface TFRestaurant : NSManagedObject
 
+@property (nonatomic, retain) NSDate *date;
+
 @property (nonatomic, retain) NSNumber *remoteId;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSNumber *gpsLatitude;
