@@ -3,7 +3,6 @@
 #import "TFRestaurantHeaderViewCell.h"
 #import "TFRestaurantRecordViewFlowLayout.h"
 #import "TFRestaurantRateViewCell.h"
-#import "TFRestaurantHeaderBarButton.h"
 
 @interface TFRestaurantRecordViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, TFRestaurantHeaderViewCellDelegate>
 
@@ -76,15 +75,7 @@
 
 #pragma mark - TFRestaurantHeaderViewCellDelegate
 
-- (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell didTapPicturesBarButton:(TFRestaurantHeaderBarButton *)button {
-
-}
-
-- (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell didTapReviewsBarButton:(TFRestaurantHeaderBarButton *)button {
-
-}
-
-- (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell didTapMapBarButton:(TFRestaurantHeaderBarButton *)button {
+- (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell didTapBarButtonWithState:(TFRestaurantHeaderViewCellSelectedBarState *)state {
 
 }
 

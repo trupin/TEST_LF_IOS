@@ -19,9 +19,7 @@
 @property(nonatomic, strong) TFRestaurantHeaderLabel *nameLabel;
 @property(nonatomic, strong) TFRestaurantHeaderLabel *addressLabel;
 
-@property(nonatomic, strong) TFRestaurantHeaderBarButton *picturesBarButton;
-@property(nonatomic, strong) TFRestaurantHeaderBarButton *reviewsBarButton;
-@property(nonatomic, strong) TFRestaurantHeaderBarButton *mapBarButton;
+@property(nonatomic, strong) NSArray *barButtons;
 
 @end
 
@@ -66,21 +64,27 @@
         self.addressLabel.font = [self.addressLabel.font fontWithSize:15];
         [self addSubview:self.addressLabel];
 
+        TFRestaurantHeaderBarButton *picturesBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
+        picturesBarButton.tag = TFRestaurantHeaderViewCellSelectedBarStatePictures;
+        [picturesBarButton setTitle:NSLocalizedString(@"PICTURE_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
+        [picturesBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:picturesBarButton];
 
-        self.picturesBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
-        [self.picturesBarButton setTitle:NSLocalizedString(@"PICTURE_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
-        [self.picturesBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:self.picturesBarButton];
+        TFRestaurantHeaderBarButton *reviewsBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
+        reviewsBarButton.tag = TFRestaurantHeaderViewCellSelectedBarStateReviews;
+        [reviewsBarButton setTitle:NSLocalizedString(@"REVIEWS_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
+        [reviewsBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:reviewsBarButton];
 
-        self.reviewsBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
-        [self.reviewsBarButton setTitle:NSLocalizedString(@"REVIEWS_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
-        [self.reviewsBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:self.reviewsBarButton];
+        TFRestaurantHeaderBarButton *mapBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
+        mapBarButton.tag = TFRestaurantHeaderViewCellSelectedBarStateMap;
+        [mapBarButton setTitle:NSLocalizedString(@"MAP_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
+        [mapBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:mapBarButton];
 
-        self.mapBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
-        [self.mapBarButton setTitle:NSLocalizedString(@"MAP_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
-        [self.mapBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:self.mapBarButton];
+        self.barButtons = @[picturesBarButton, reviewsBarButton, mapBarButton];
+
+        [self didTapBarButton:reviewsBarButton];
     }
 
     return self;
@@ -107,17 +111,12 @@
         [self.addressLabel autoPinEdge:ALEdgeBottom toEdge:ALEdgeBottom ofView:self.imageView withOffset:-20];
         [self.addressLabel autoPinEdge:ALEdgeLeft toEdge:ALEdgeLeft ofView:self.imageView withOffset:20];
 
-        [self.picturesBarButton autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.imageView];
-        [self.picturesBarButton autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+        for (UIButton *button in self.barButtons) {
+            [button autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.imageView];
+            [button autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+        }
 
-        [self.reviewsBarButton autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.imageView];
-        [self.reviewsBarButton autoPinEdgeToSuperviewEdge:ALEdgeBottom];
-
-        [self.mapBarButton autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.imageView];
-        [self.mapBarButton autoPinEdgeToSuperviewEdge:ALEdgeBottom];
-
-        NSArray *barButtons = @[self.picturesBarButton, self.reviewsBarButton, self.mapBarButton];
-        [barButtons autoDistributeViewsAlongAxis:ALAxisBaseline
+        [self.barButtons autoDistributeViewsAlongAxis:ALAxisBaseline
                                        alignedTo:ALAttributeBaseline
                                 withFixedSpacing:0];
     }
@@ -133,17 +132,11 @@
 #pragma mark - Private methods
 
 - (void)didTapBarButton:(TFRestaurantHeaderBarButton *)view {
-    for (UIButton *button in @[self.picturesBarButton, self.reviewsBarButton, self.mapBarButton])
+    for (UIButton *button in self.barButtons)
         [button setSelected:[button isEqual:view]];
 
-    if ([view isEqual:self.picturesBarButton])
-        [self.delegate restaurantHeaderViewCell:self didTapMapBarButton:self.picturesBarButton];
-    else if ([view isEqual:self.reviewsBarButton])
-        [self.delegate restaurantHeaderViewCell:self didTapReviewsBarButton:self.reviewsBarButton];
-    else if ([view isEqual:self.mapBarButton])
-        [self.delegate restaurantHeaderViewCell:self didTapReviewsBarButton:self.mapBarButton];
-    else
-        DDLogWarn(@"This condition shouldn't happen. Probably a bug you should fix.");
+    [self.delegate restaurantHeaderViewCell:self
+                   didTapBarButtonWithState:(TFRestaurantHeaderViewCellSelectedBarState *) view.tag];
 }
 
 @end
