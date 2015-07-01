@@ -4,16 +4,16 @@
 @class TFRestaurantHeaderViewCell;
 @class TFRestaurantHeaderBarButton;
 
-typedef NS_ENUM(NSInteger, TFRestaurantHeaderViewCellSelectedBarState) {
-    TFRestaurantHeaderViewCellSelectedBarStatePictures = 0,
-    TFRestaurantHeaderViewCellSelectedBarStateReviews = 1,
-    TFRestaurantHeaderViewCellSelectedBarStateMap = 2
+typedef NS_ENUM(NSInteger, TFRestaurantHeaderViewCellBarState) {
+    TFRestaurantHeaderViewCellBarStatePictures = 0,
+    TFRestaurantHeaderViewCellBarStateReviews = 1,
+    TFRestaurantHeaderViewCellBarStateMap = 2
 };
 
 @protocol TFRestaurantHeaderViewCellDelegate
 
 - (void)restaurantHeaderViewCell:(TFRestaurantHeaderViewCell *)restaurantHeaderViewCell
-        didTapBarButtonWithState:(TFRestaurantHeaderViewCellSelectedBarState *)state;
+        didTapBarButtonWithState:(TFRestaurantHeaderViewCellBarState)state;
 
 @end
 

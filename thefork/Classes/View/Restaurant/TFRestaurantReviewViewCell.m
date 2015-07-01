@@ -1,6 +1,6 @@
-#import "TFRestaurantRateViewCell.h"
+#import "TFRestaurantReviewViewCell.h"
 
-@implementation TFRestaurantRateViewCell
+@implementation TFRestaurantReviewViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

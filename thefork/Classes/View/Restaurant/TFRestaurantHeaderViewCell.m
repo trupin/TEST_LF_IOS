@@ -65,26 +65,25 @@
         [self addSubview:self.addressLabel];
 
         TFRestaurantHeaderBarButton *picturesBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
-        picturesBarButton.tag = TFRestaurantHeaderViewCellSelectedBarStatePictures;
+        picturesBarButton.tag = TFRestaurantHeaderViewCellBarStatePictures;
         [picturesBarButton setTitle:NSLocalizedString(@"PICTURE_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
         [picturesBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:picturesBarButton];
 
         TFRestaurantHeaderBarButton *reviewsBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
-        reviewsBarButton.tag = TFRestaurantHeaderViewCellSelectedBarStateReviews;
+        reviewsBarButton.tag = TFRestaurantHeaderViewCellBarStateReviews;
         [reviewsBarButton setTitle:NSLocalizedString(@"REVIEWS_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
         [reviewsBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
+        [reviewsBarButton setSelected:YES];
         [self addSubview:reviewsBarButton];
 
         TFRestaurantHeaderBarButton *mapBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
-        mapBarButton.tag = TFRestaurantHeaderViewCellSelectedBarStateMap;
+        mapBarButton.tag = TFRestaurantHeaderViewCellBarStateMap;
         [mapBarButton setTitle:NSLocalizedString(@"MAP_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
         [mapBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:mapBarButton];
 
         self.barButtons = @[picturesBarButton, reviewsBarButton, mapBarButton];
-
-        [self didTapBarButton:reviewsBarButton];
     }
 
     return self;
@@ -123,6 +122,8 @@
     [super updateConstraints];
 }
 
+#pragma mark - Public methods
+
 - (void)updateWithRestaurant:(TFRestaurant *)restaurant {
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:restaurant.mainPictureUrl]];
     self.nameLabel.text = restaurant.name;
@@ -136,7 +137,7 @@
         [button setSelected:[button isEqual:view]];
 
     [self.delegate restaurantHeaderViewCell:self
-                   didTapBarButtonWithState:(TFRestaurantHeaderViewCellSelectedBarState *) view.tag];
+                   didTapBarButtonWithState:(TFRestaurantHeaderViewCellBarState) view.tag];
 }
 
 @end
