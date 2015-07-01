@@ -10,3 +10,4 @@ pod 'MagicalRecord', :git => 'https://github.com/magicalpanda/MagicalRecord.git'
 
 pod 'SDWebImage'
 pod 'FontAwesomeKit'
+pod 'PureLayout'

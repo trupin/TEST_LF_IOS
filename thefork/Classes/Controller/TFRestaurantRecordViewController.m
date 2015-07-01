@@ -63,9 +63,11 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        return [self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
-                                                       withReuseIdentifier:NSStringFromClass([TFRestaurantHeaderViewCell class])
-                                                              forIndexPath:indexPath];
+        TFRestaurantHeaderViewCell *cell = [self.collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+                                                                                   withReuseIdentifier:NSStringFromClass([TFRestaurantHeaderViewCell class])
+                                                                                          forIndexPath:indexPath];
+        [cell updateWithRestaurant:self.restaurant];
+        return cell;
     }
     return nil;
 }
