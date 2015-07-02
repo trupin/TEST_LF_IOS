@@ -2,6 +2,6 @@
 /* Localization file */
 
 "PICTURE_BAR_BUTTON_TITLE" = "Pictures";
-"REVIEWS_BAR_BUTTON_TITLE" = "Reviews";
 "MAP_BAR_BUTTON_TITLE" = "Map";
 
+"RESTAURANT_MAP_VIEW_CELL_PLACE_DESCRIPTION" = "%@ restaurant for %@ %@ and over";

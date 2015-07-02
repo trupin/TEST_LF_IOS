@@ -66,13 +66,11 @@
 
         TFRestaurantHeaderBarButton *picturesBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
         picturesBarButton.tag = TFRestaurantHeaderViewCellBarStatePictures;
-        [picturesBarButton setTitle:NSLocalizedString(@"PICTURE_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
         [picturesBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:picturesBarButton];
 
         TFRestaurantHeaderBarButton *reviewsBarButton = [TFRestaurantHeaderBarButton buttonWithType:UIButtonTypeRoundedRect];
         reviewsBarButton.tag = TFRestaurantHeaderViewCellBarStateReviews;
-        [reviewsBarButton setTitle:NSLocalizedString(@"REVIEWS_BAR_BUTTON_TITLE", nil) forState:UIControlStateNormal];
         [reviewsBarButton addTarget:self action:@selector(didTapBarButton:) forControlEvents:UIControlEventTouchUpInside];
         [reviewsBarButton setSelected:YES];
         [self addSubview:reviewsBarButton];
@@ -128,6 +126,13 @@
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:restaurant.mainPictureUrl]];
     self.nameLabel.text = restaurant.name;
     self.addressLabel.text = [NSString stringWithFormat:@"%@, %@, %@", restaurant.address, restaurant.zipCode, restaurant.city];
+
+    TFRestaurantHeaderBarButton *reviewsBarButton = self.barButtons[TFRestaurantHeaderViewCellBarStateReviews];
+    [reviewsBarButton setTitle:[NSString stringWithFormat:@"%@/10", restaurant.averageRate] forState:UIControlStateNormal];
+
+    TFRestaurantHeaderBarButton *picturesBarButton = self.barButtons[TFRestaurantHeaderViewCellBarStatePictures];
+    [picturesBarButton setTitle:[NSString stringWithFormat:@"%d %@", restaurant.diaporamaPictures.count, NSLocalizedString(@"PICTURE_BAR_BUTTON_TITLE", nil)]
+                       forState:UIControlStateNormal];
 }
 
 #pragma mark - Private methods

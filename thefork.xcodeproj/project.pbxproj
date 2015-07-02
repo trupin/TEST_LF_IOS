@@ -16,6 +16,7 @@
 		CC6F8444510EFAB2F56B7ACF /* TFRestaurantRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F89759F7A25B06E442CFC /* TFRestaurantRecordViewController.m */; };
 		CC6F8449F13CB465399E7864 /* UIImage+TFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8499FE0E02947CB0590C /* UIImage+TFUtil.m */; };
 		CC6F849DA094244142F9CBD4 /* TFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8A703E93919044A1C873 /* TFHTTPRequestOperationManager.m */; };
+		CC6F84D34C0191D42316F24D /* UIColor+TFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F88A593E508836F1AD07E /* UIColor+TFUtil.m */; };
 		CC6F854DD5746F3BE9D28ECE /* TFRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F848D77B258C83554B69B /* TFRequestManager.m */; };
 		CC6F855C46D1B6D9A542354B /* TFRestaurantReviewViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6F8638CABF53F1D5936085 /* TFRestaurantReviewViewCell.m */; };
 		CC6F869351C91638323AC9FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6F8F5277F5AE770A482439 /* Images.xcassets */; };
@@ -58,6 +59,7 @@
 		CC6F829BABD9D2E2C7C5904E /* TFRestaurantReviewViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantReviewViewCell.h; sourceTree = "<group>"; };
 		CC6F82A6FFB271EE4B30916D /* TFRestaurantMapViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantMapViewCell.m; sourceTree = "<group>"; };
 		CC6F835581900BD44253313D /* TFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		CC6F8372E87084455D129B5C /* UIColor+TFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TFUtil.h"; sourceTree = "<group>"; };
 		CC6F848A68C85DB7182EACFC /* TFRestaurantHeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantHeaderLabel.h; sourceTree = "<group>"; };
 		CC6F848D77B258C83554B69B /* TFRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRequestManager.m; sourceTree = "<group>"; };
 		CC6F8499FE0E02947CB0590C /* UIImage+TFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TFUtil.m"; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		CC6F87EF6DF9343345BA172E /* TFFunctionAndFileLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFunctionAndFileLogFormatter.h; sourceTree = "<group>"; };
 		CC6F8830AE0EFFC13E4F7E8C /* TFRestaurantHeaderBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantHeaderBarButton.h; sourceTree = "<group>"; };
 		CC6F88519E12779EB46866B4 /* TFRestaurantPictureViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFRestaurantPictureViewCell.h; sourceTree = "<group>"; };
+		CC6F88A593E508836F1AD07E /* UIColor+TFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TFUtil.m"; sourceTree = "<group>"; };
 		CC6F88F13B141867359B5158 /* TFRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurant.m; sourceTree = "<group>"; };
 		CC6F89571A1E22BBF6C0AF1B /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		CC6F89679F537659DA5B8AAB /* TFRestaurantHeaderBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFRestaurantHeaderBarButton.m; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 			children = (
 				CC6F8499FE0E02947CB0590C /* UIImage+TFUtil.m */,
 				CC6F8A5ABCB6844583F472E4 /* UIImage+TFUtil.h */,
+				CC6F88A593E508836F1AD07E /* UIColor+TFUtil.m */,
+				CC6F8372E87084455D129B5C /* UIColor+TFUtil.h */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -484,6 +489,7 @@
 				CC6F8035BF9D2B8AAE3C2C50 /* TFRestaurantHeaderBarButton.m in Sources */,
 				CC6F8CCFA7F78E21CD5F3372 /* TFRestaurantPictureViewCell.m in Sources */,
 				CC6F8ACC6291CDF0B3710E98 /* TFRestaurantMapViewCell.m in Sources */,
+				CC6F84D34C0191D42316F24D /* UIColor+TFUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

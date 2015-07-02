@@ -87,6 +87,7 @@
         }
         case TFRestaurantHeaderViewCellBarStateMap: {
             TFRestaurantMapViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([TFRestaurantMapViewCell class]) forIndexPath:indexPath];
+            [cell updateWithRestaurant:self.restaurant];
 
             return cell;
         }
