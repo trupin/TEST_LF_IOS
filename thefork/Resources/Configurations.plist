@@ -7,21 +7,21 @@
 		<key>GMapsApiKey</key>
 		<string>AIzaSyDudzEfgtXXwpz3_WhE6iRep8H7SEwPFj4</string>
 		<key>ApiEndPoint</key>
-		<string>http://api.lafourchette.com</string>
+		<string>http://api.lafourchette.com/api</string>
 	</dict>
 	<key>Staging</key>
 	<dict>
 		<key>GMapsApiKey</key>
 		<string>AIzaSyDudzEfgtXXwpz3_WhE6iRep8H7SEwPFj4</string>
 		<key>ApiEndPoint</key>
-		<string>http://api.lafourchette.com</string>
+		<string>http://api.lafourchette.com/api</string>
 	</dict>
 	<key>Development</key>
 	<dict>
 		<key>GMapsApiKey</key>
 		<string>AIzaSyDudzEfgtXXwpz3_WhE6iRep8H7SEwPFj4</string>
 		<key>ApiEndPoint</key>
-		<string>http://api.lafourchette.com</string>
+		<string>http://api.lafourchette.com/api</string>
 	</dict>
 </dict>
 </plist>

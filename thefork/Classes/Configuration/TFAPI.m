@@ -4,7 +4,7 @@
 @implementation TFAPI
 
 + (NSString *)restaurantGetInfoWithRemoteId:(NSNumber *)remoteId {
-    return [TFConfiguration route:[NSString stringWithFormat:@"/api?key=IPHONEPRODEDCRFV&method=restaurant_get_info&id_restaurant=%@", remoteId]];
+    return [TFConfiguration route:[NSString stringWithFormat:@"?key=IPHONEPRODEDCRFV&method=restaurant_get_info&id_restaurant=%@", remoteId]];
 }
 
 @end

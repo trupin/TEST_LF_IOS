@@ -20,11 +20,12 @@
 }
 
 - (BFTask *)getRestaurantWithRemoteId:(NSNumber *)remoteId {
-    BFTask *request = [[TFRequestManager instance] GET:[TFAPI restaurantGetInfoWithRemoteId:remoteId]
-                                             withParameters:nil];
+    TFRestaurant *restaurant = [TFRestaurant MR_findFirstByAttribute:@"remoteId" withValue:remoteId];
+    if (restaurant)
+        return [BFTask taskWithResult:restaurant];
 
-    if (![TFHTTPRequestOperationManager instance].reachabilityManager.isReachable)
-        return [BFTask taskWithResult:[TFRestaurant MR_findFirstByAttribute:@"remoteId" withValue:remoteId]];
+    BFTask *request = [[TFRequestManager instance] GET:[TFAPI restaurantGetInfoWithRemoteId:remoteId]
+                                        withParameters:nil];
 
     return [request continueWithSuccessBlock:^id(BFTask *task) {
         NSDictionary *data = task.result[@"data"];

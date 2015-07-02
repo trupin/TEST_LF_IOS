@@ -42,7 +42,6 @@
 }
 
 - (void)setupWindow {
-
     [[[TFRestaurantManager instance] getRestaurantWithRemoteId:@6861] continueWithSuccessBlock:^id(BFTask *task) {
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
