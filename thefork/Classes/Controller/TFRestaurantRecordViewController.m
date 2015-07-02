@@ -62,7 +62,7 @@
         case TFRestaurantHeaderViewCellBarStatePictures:
             return [self.restaurant.diaporamaPictures count];
         case TFRestaurantHeaderViewCellBarStateReviews:
-            return 100;
+            return 0;
         case TFRestaurantHeaderViewCellBarStateMap:
             return 1;
         default:
